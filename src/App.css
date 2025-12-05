@@ -47,7 +47,9 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.6;
+  margin: 0;
 }
+
 
 /* -- Container -- */
 .container{
@@ -589,3 +591,43 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+
+/* index.css 
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background-color: #edefee;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  margin: 0;
+  background-color: #495e57;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  background-color: #495e57;
+  color: #f4ce14;
+}
+
+.specials-grid,
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+*/
