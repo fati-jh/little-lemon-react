@@ -187,7 +187,10 @@ nav ul li a {
     font-size: 1rem;
     color: #444;
 }
-
+.reserveBtn:hover{
+  background-color: #495E57;
+  color: #e4bf22;
+}
 /* -- Header Section (Specials) --*/
 .specials{
   background-color: white ;
@@ -396,9 +399,6 @@ width: 45%;
     display: flex;
     justify-content: center;
     position: relative;
-     /*  flex: 1;
- padding: 15px;
-     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);*/
 }
 
 .intro-images img{
@@ -408,37 +408,10 @@ width: 45%;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 
- /* width: 350px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);*/
 }
-
-/*h1 {
-    font-size: 36px;
-    margin-bottom: 0;
-}
-
-h2 {
-    font-size: 24px;
-    color: #575757; /* Couleur de texte gris moyen
-    margin-top: 5px;
-}
-
-p {
-    line-height: 1.6;
-    color: #333;
-}
-.intro-images img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}*/
-
 
 .image-front{
   position: relative;
-  /*top: -10px;
-  right: 30px;*/
    top:80px;
    left: 50px;
   opacity: 0.95;
@@ -508,80 +481,65 @@ footer {
   margin-left: 350px;
   color: #e4bf22;
 }
-/*footer{
-  padding: 80px 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 50px;
-  background-color: #495E57;
-}
-.logo-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 150px;
-  height: 260px;
-}
-.logo-box img {
-   width: 120px;
-   height: auto;
-   margin-bottom: 20px;
-}
 
-.footer-col{
-  display: flex;
-  width: 30%;
-  min-width: 250px;
-  flex-direction: column;
-  line-height: 1.8;
-  color: #fff;
-}
-.footer-col ul{
-  padding-left: 20px;
-  line-height: 1.9;
-  list-style-type: none;
-}
-.footer-col a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-}
-.footer-col a:hover{
-  opacity: 0.7;
-  color: #e4bf22;
-}
-/*.footer-nav{
-  display: flex;
-  flex-direction: column;
-  line-height: 1.8;  
-  
-}
-.footer-nav ul{
-  list-style-type: none;
-  padding-left: 50px;
-  line-height: 1.8;
-}
-.footer-bottom{
+
+/* Bottom copyright */
+.footer-bottom {
   text-align: center;
   padding: 18px;
   border-top: 1px solid #6b7a74;
   font-size: 15px;
   margin-top: 20px;
+}
+
+/* Form Booking --------------------- */
+.booking-form {
+  display: grid;
+  gap: 1rem;
+  width: 400px;
+  padding: 2rem 2.5rem;
+  margin-left: 400px;
+  background-color: #495E57;
   color: #e4bf22;
-}*/
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.booking-form label {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.booking-page{
 
-    /* Bottom copyright */
-    .footer-bottom {
-        text-align: center;
-        padding: 18px;
-        border-top: 1px solid #6b7a74;
-        font-size: 15px;
-        margin-top: 20px;
-    }
+  background-color: #e4bf22;
+  min-height: 100vh;
+  text-align: center;
+
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+}
 
 
+input, select {
+  font-family: "karla", sans-serif;
+  font-size:0.9rem;
+  color: #333333;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.3rem;
+  border: 1px solid #d3d3d3;
+}
+
+.guests:not(:in-range){
+  border: 2px solid red;
+}
 /* Media query pour les écrans plus petits (mobile-first approach) */
 @media (max-width: 768px) {
     .container {
@@ -593,41 +551,3 @@ footer {
 }
 
 
-/* index.css 
-body {
-  font-family: system-ui, sans-serif;
-  margin: 0;
-  background-color: #edefee;
-  color: #333;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  padding: 1rem 2rem;
-  margin: 0;
-  background-color: #495e57;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.cta {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 2rem;
-  background-color: #495e57;
-  color: #f4ce14;
-}
-
-.specials-grid,
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-*/
